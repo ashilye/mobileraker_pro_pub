@@ -13,7 +13,9 @@ dependencies:
 
   #packages maintained by mobileraker
   common:
-    path: ../mobileraker/common
+    git:
+      url: git://github.com/mobileraker/common.git
+      path: common
 
   firebase_core: 2.16.0
 
