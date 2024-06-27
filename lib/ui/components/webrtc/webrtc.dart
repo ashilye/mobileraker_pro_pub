@@ -1,8 +1,9 @@
 /*
- * Copyright (c) 2023. Patrick Schmidt.
+ * Copyright (c) 2023-2024. Patrick Schmidt.
  * All rights reserved.
  */
 
+import 'package:common/data/enums/webcam_service_type.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
@@ -13,11 +14,13 @@ class WebRtc extends StatelessWidget {
     Key? key,
     required this.camUri,
     required this.dio,
+    required WebcamServiceType service,
     this.headers = const {},
     this.rotation = 0,
     this.transform,
     this.stackContent = const [],
     this.imageBuilder,
+    VoidCallback? onHidePressed,
   }) : super(key: key);
   final Uri camUri;
   final Map<String, String> headers;
