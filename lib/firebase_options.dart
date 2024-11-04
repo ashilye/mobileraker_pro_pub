@@ -18,6 +18,7 @@ import 'package:flutter/foundation.dart' show defaultTargetPlatform, kIsWeb, Tar
 ///   options: DefaultFirebaseOptions.currentPlatform,
 /// );
 /// ```
+///
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -54,19 +55,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: '<>',
-    appId: '<>',
-    messagingSenderId: '<>',
-    projectId: '<>',
-    storageBucket: '<>',
+    apiKey: 'AIzaSyCacQrgN25ktAakXqBY08hkBZKDRYO1j2Q',
+    appId: '1:978561079721:android:bfcc42e09e7b995fd24cb8',
+    messagingSenderId: '1234567890',
+    projectId: 'mobileraker-35d99',
+    storageBucket: 'mobileraker-35d99.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: '<>',
-    appId: '<>',
-    messagingSenderId: '<>',
-    projectId: '<>',
-    storageBucket: '<>',
+    apiKey: 'AIzaSyA6c_KOhMjcumbqPqGyStnVEwxeJietz0A',
+    appId: '1:978561079721:ios:bd0c7d8bd71f1c7fd24cb8',
+    messagingSenderId: '1234567890',
+    projectId: 'mobileraker-35d99',
+    storageBucket: 'mobileraker-35d99.appspot.com',
     iosClientId: '<>',
     iosBundleId: '<>',
   );
