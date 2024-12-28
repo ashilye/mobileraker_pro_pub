@@ -33,21 +33,21 @@ class DashboardLayoutService {
   DashboardLayout defaultDashboardLayout() {
     return DashboardLayout(name: 'Default', tabs: [
       DashboardTab(name: 'General', icon: 'nozzle', components: [
+        DashboardComponent(type: DashboardComponentType.webcam),
         DashboardComponent(type: DashboardComponentType.machineStatus),
         DashboardComponent(type: DashboardComponentType.temperatureSensorPreset),
-        DashboardComponent(type: DashboardComponentType.webcam),
         DashboardComponent(type: DashboardComponentType.controlXYZ),
-        DashboardComponent(type: DashboardComponentType.zOffset),
-        DashboardComponent(type: DashboardComponentType.spoolman),
+        // DashboardComponent(type: DashboardComponentType.zOffset),
+        // DashboardComponent(type: DashboardComponentType.spoolman),
       ]),
       DashboardTab(name: 'Control', icon: 'sliders', components: [
-        DashboardComponent(type: DashboardComponentType.macroGroup),
         DashboardComponent(type: DashboardComponentType.controlExtruder),
         DashboardComponent(type: DashboardComponentType.fans),
-        DashboardComponent(type: DashboardComponentType.pins),
-        DashboardComponent(type: DashboardComponentType.powerApi),
         DashboardComponent(type: DashboardComponentType.groupedSliders),
+        DashboardComponent(type: DashboardComponentType.pins),
+        // DashboardComponent(type: DashboardComponentType.powerApi),
         DashboardComponent(type: DashboardComponentType.bedMesh),
+        DashboardComponent(type: DashboardComponentType.macroGroup),
       ]),
     ]);
   }
