@@ -49,6 +49,10 @@ class DashboardLayoutService {
         DashboardComponent(type: DashboardComponentType.bedMesh),
         DashboardComponent(type: DashboardComponentType.macroGroup),
       ]),
+
+      DashboardTab(name: 'File', icon: 'file', components: [
+        DashboardComponent(type: DashboardComponentType.fileView),
+      ]),
     ]);
   }
 
@@ -57,6 +61,7 @@ class DashboardLayoutService {
     return DashboardLayout(name: 'Empty', tabs: [
       emptyDashboardTab('nozzle'),
       emptyDashboardTab('sliders'),
+      emptyDashboardTab('File'),
     ]);
   }
 
