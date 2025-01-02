@@ -37,7 +37,7 @@ class DashboardLayoutService {
         DashboardComponent(type: DashboardComponentType.machineStatus),
         DashboardComponent(type: DashboardComponentType.temperatureSensorPreset),
         DashboardComponent(type: DashboardComponentType.controlXYZ),
-        // DashboardComponent(type: DashboardComponentType.zOffset),
+        DashboardComponent(type: DashboardComponentType.zOffset),
         // DashboardComponent(type: DashboardComponentType.spoolman),
       ]),
       DashboardTab(name: 'Control', icon: 'sliders', components: [
